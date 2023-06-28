@@ -55,8 +55,10 @@
         order: 2;
       }
 
+      /* flex: flex-grow flex-shrink flex-basis */
       .item {
-        flex-grow: 1;
+        /* flex-grow: 1; same as: flex: 1 */
+        /* flex: 1; */
         /* elements occupies space as much as they can */
       }
 
@@ -64,8 +66,27 @@
         /* flex-grow: 2;    */
         /* this element is now double the size of the other elements */
 
-        flex-grow: 3;
+        /* flex: 3; */
         /* this element is now triple the size of the other elements */
+      }
+
+      .i3 {
+        flex: 1;
+        /* now it is occupying all the space it can in the flex container */
+      }
+
+      .i2 {
+        /* flex-basis: default --> auto */
+
+        /* flex-basis: 20%; */
+        /* it is now taking the space of 20% of it's container */
+
+        /* flex-basis: 300px; */
+        /* when we start to decrease the veiwport size, it's pixels also decreases so to stop this: */
+
+        /* flex-shrink: 0; */
+
+        flex: 0 1 300px;
       }
     </style>
   </head>
