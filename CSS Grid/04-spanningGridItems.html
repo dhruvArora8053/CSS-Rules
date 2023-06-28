@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        background-color: #eee;
+        width: 1000px;
+        margin: 30px auto;
+
+        display: grid;
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+      }
+
+      .item {
+        padding: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+        color: white;
+      }
+
+      .item--1 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+
+      .item--5 {
+        grid-area: 1/3/2/4;
+      }
+
+      .item--6 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+
+      /* from here */
+      /* If we have more items than we actually define cells here then CSS grid will automatically add a new row or a new column and these new rows and columns are called implicit grid */
+      .item--3 {
+        grid-column: 1/3;
+      }
+      /* the violet one moves down because we explicity positioned the orange one first but if we want to position it there so we need to tell explicitly */
+      .item--3 {
+        grid-row: 2/3;
+      }
+      /* no orange one got hidden behind the violet one, so to bring the orange one to the top: */
+      .item--1 {
+        z-index: 1;
+      }
+
+      .item--5 {
+        grid-row: 1/3;
+      }
+
+      /* spanning */
+      .item--2 {
+        /* grid-column: 1 / span 2; */
+        /* grid-column: 2 / span 3; */
+        grid-column: 2/-1;
+      }
+
+      .item--1 {
+        background-color: orangered;
+      }
+
+      .item--2 {
+        background-color: yellowgreen;
+      }
+
+      .item--3 {
+        background-color: blueviolet;
+      }
+
+      .item--4 {
+        background-color: palevioletred;
+      }
+
+      .item--5 {
+        background-color: royalblue;
+      }
+
+      .item--6 {
+        background-color: goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+  </body>
+</html>
