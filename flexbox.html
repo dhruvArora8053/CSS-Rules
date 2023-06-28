@@ -32,7 +32,29 @@
         flex-direction: row;
 
         /* justify-content: main-axis */
+        /* justify-content: start; default */
+        /* justify-content: center; */
+        /* justify-content: end; */
+
+        /* justify-content: space-between;
+         first and last element placed on the extreme edges and rest of the space space evenly distributed between the elements */
+
+        /* justify-content: space-around; 
+         it puts the same amount of space on both the left side and the right side of each of the flex items */
+
+        /* justify-content: space-evenly;
+         it ensures space is always the same between elements and on the sides of the elements */
+
         justify-content: center;
+
+        /* align-items: cross-axis */
+        /* align-items: stretch; default*/
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+
+        /* align-items: baseline;
+        it will align the text on these flex items along a line */
       }
 
       .item {
@@ -42,14 +64,22 @@
         color: #fff;
         font-size: 40px;
       }
+
+      .i2 {
+        height: 200px;
+      }
+
+      .i4 {
+        font-size: 70px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="item">1</div>
-      <div class="item">2</div>
+      <div class="item i2">2</div>
       <div class="item">3</div>
-      <div class="item">4</div>
+      <div class="item i4">4</div>
       <div class="item">5</div>
     </div>
   </body>
