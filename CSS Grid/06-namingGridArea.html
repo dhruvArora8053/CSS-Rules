@@ -18,18 +18,27 @@
         grid-template-columns: 1fr 1fr 1fr 150px;
         grid-template-rows: 100px 150px 1fr 100px;
         gap: 15px;
+
+        /* from here */
+        grid-template-areas:
+          "head head head head"
+          "box box box side"
+          "main main main side"
+          "foot foot foot foot";
       }
+      /* you cannot leave any block empty instead what you can do is to write '.' instead of a word so it won't fill up that space
+      For small layout such as 4*4 or 5*5, this method is recommended */
 
       .item {
         background-color: red;
       }
 
       .item-1 {
-        grid-column: 1/-1;
+        grid-area: head;
       }
 
       .item-6 {
-        grid-column: 1 / span 3;
+        grid-area: main;
       }
 
       /* .item-5{
@@ -37,12 +46,11 @@
       } */
 
       .item-7 {
-        grid-column: 1/-1;
+        grid-area: foot;
       }
 
       .item-4 {
-        grid-column: 4/5;
-        grid-row: 2/4;
+        grid-area: side;
       }
     </style>
   </head>
