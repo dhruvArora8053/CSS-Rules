@@ -15,10 +15,10 @@
       .container {
         background-color: #ccc;
         padding: 10px;
-        height: 1500px;
+        /* height: 1500px; */
 
         display: flex;
-        flex-direction: column ;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
       }
@@ -33,10 +33,17 @@
 
       .i2 {
         height: 200px;
+        order: 2;
       }
 
-      .i4{
+      .i3 {
+        order: 1;
+      }
+
+      .i4 {
         /* font-size: 70px; */
+        align-self: flex-end;
+        order: -1;
       }
     </style>
   </head>
@@ -44,7 +51,7 @@
     <div class="container">
       <div class="item">1</div>
       <div class="item i2">2</div>
-      <div class="item">3</div>
+      <div class="item i3">3</div>
       <div class="item i4">4</div>
       <div class="item">5</div>
     </div>
