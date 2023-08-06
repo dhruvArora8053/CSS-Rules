@@ -15,12 +15,15 @@
       .container {
         background-color: #ccc;
         padding: 10px;
-        /* height: 1500px; */
+        height: 1000px;
 
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        flex-wrap: wrap;
+        align-content: stretch;
       }
 
       .item {
@@ -39,7 +42,7 @@
         /* flex-grow: 3; */
         /* flex-basis: 300px;
         flex-shrink: 0  ; */
-        flex: 0 1 300px; 
+        flex: 0 1 300px;
       }
 
       .i3 {
@@ -57,10 +60,15 @@
   <body>
     <div class="container">
       <div class="item">1</div>
-      <div class="item i2">2</div>
-      <div class="item i3">3</div>
-      <div class="item i4">4</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
       <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
     </div>
   </body>
 </html>
