@@ -1,0 +1,4 @@
+.header {
+  height: 95vh;
+  /* now the header will take the 95% of the viweport height no matter what the size of the viewport so it really helps in responsiveness */
+}
