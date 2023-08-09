@@ -24,7 +24,14 @@
         */
 
         /* to style implicit grids: */
-        grid-auto-rows: 120px;
+        /* grid-auto-rows: 120px; */
+
+        /* now you may ask why are these additional grid items that we cannot fit into our explicit grid added as rows and not as columns? 
+        It's because of a simple small property that is called grid-auto-flow, and this property by default set to row but we can also set it to column: */
+        grid-auto-flow: column;
+        /* now the remaining items are now no longer added as rows but as columns because we told our grid to flow as columns */
+
+        grid-auto-columns: 0.5fr;
       }
 
       .item {
