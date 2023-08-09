@@ -1,3 +1,4 @@
+/* 1. */
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -15,5 +16,15 @@
   /* from here */
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   /* for triangle --> polygon(50% 0, 50% 0, 100% 100%, 0 100%); 
-  tool --> clippy, clip path maker*/
+  tool --> clippy, clip path maker*/  
+}
+
+/* 2. */
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  /* from here */
+  transform: translate(-50%, -50%);
 }
