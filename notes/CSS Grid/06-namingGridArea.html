@@ -21,8 +21,8 @@
 
         /* from here */
         grid-template-areas:
-          "head head head head"
-          "box box box side"
+          ". head head ."
+          "box-1 box-2 box-3 side"
           "main main main side"
           "foot foot foot foot";
       }
@@ -51,6 +51,18 @@
 
       .item-4 {
         grid-area: side;
+      }
+
+      .item-2 {
+        grid-area: box-1;
+      }
+
+      .item-3 {
+        grid-area: box-2;
+      }
+
+      .item-5 {
+        grid-area: box-3;
       }
     </style>
   </head>
