@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    Hello World
-</body>
+    <style>
+      /* global reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ON CONTAINER */
+      .container {
+        background-color: #ccc;
+        padding: 10px;
+
+        /* from here */
+        display: flex;
+
+        /* flex-direction */
+        /* flex-direction: row;  default, direction: left to right*/
+
+        /* flex-direction: row-reverse; direction: right to left */
+
+        /* flex-direction: column; direction: top to bottom */
+
+        /* flex-direction: column-reverse; direction: bottom to top */
+
+        flex-direction: row;
+
+        /* justify-content --> main-axis */
+        /* justify-content: start; default */
+        /* justify-content: center; */
+        /* justify-content: end; */
+
+        /* justify-content: space-between;
+         first and last element placed on the extreme edges and rest of the space space evenly distributed between the elements */
+
+        /* justify-content: space-around; 
+         it puts the same amount of space on both the left side and the right side of each of the flex items */
+
+        /* justify-content: space-evenly;
+         it ensures space is always the same between elements and on the sides of the elements */
+
+        justify-content: center;
+
+        /* align-items --> cross-axis */
+        /* align-items: stretch; default*/
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+
+        /* align-items: baseline;
+        it will align the text on these flex items along a line from the bottom */
+      }
+
+      .item {
+        background-color: #f1425d;
+        padding: 40px;
+        margin: 30px;
+        color: #fff;
+        font-size: 40px;
+      }
+
+      .i2 {
+        height: 200px;
+      }
+
+      .i4 {
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item i2">2</div>
+      <div class="item">3</div>
+      <div class="item i4">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
 </html>
