@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* global reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ON CONTAINER */
+      .container {
+        background-color: #ccc;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item {
+        background-color: #f1425d;
+        padding: 40px;
+        margin: 30px;
+        color: #fff;
+        font-size: 40px;
+      }
+
+      .i2 {
+        height: 200px;
+      }
+
+      .i4 {
+        /* from here */
+        /* align-self: for particular element */
+        /* align-self: flex-end; */
+        /* align-self: flex-start; */
+        /* align-self: stretch; */
+        align-self: flex-end;
+
+        /* order: default --> 0 */
+        order: -1;
+      }
+
+      .i3 {
+        order: 1;
+      }
+
+      .i2 {
+        order: 2;
+      }
+
+      /* flex: flex-grow flex-shrink flex-basis */
+      .item {
+        /* flex-grow: 1; same as: flex: 1 */
+        /* flex: 1; */
+        /* elements occupies space as much as they can */
+      }
+
+      .i2 {
+        /* flex-grow: 2;    */
+        /* this element is now double the size of the other elements */
+
+        /* flex: 3; */
+        /* this element is now triple the size of the other elements */
+      }
+
+      .i3 {
+        flex: 1;
+        /* now it is occupying all the space it can in the flex container */
+      }
+
+      .i2 {
+        /* flex-basis: default --> auto */
+
+        /* flex-basis: 20%; */
+        /* it is now taking the space of 20% of it's container */
+
+        /* flex-basis: 300px; */
+        /* when we start to decrease the veiwport size, it's pixels also decreases so to stop this: */
+
+        /* flex-shrink: 0; */
+
+        flex: 0 1 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item i2">2</div>
+      <div class="item i3">3</div>
+      <div class="item i4">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
