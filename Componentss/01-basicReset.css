@@ -1,0 +1,24 @@
+/* 1. BASIC RESET ---------------> */
+
+/* a. Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* we want a margin on all of the elements zero pixels and ofcourse also a padding of zero so by default browsers apply a certain margin or a certain padding to some elements like for ex h1 element so the main-heading there's always some default margin in it and we don't want any of that so this allows us to basically start clean without the broser adding any margins or paddings that we don't want to our elements */
+/* box-sizing: border-box; -->
+ what this does is that the borders and the paddings are no longer added to the total width or the total height that we specify for a box. */
+
+/* b.
+ Setting up overall font properties for the entire web page on body element because of the inheritance:-
+  */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
+
+
