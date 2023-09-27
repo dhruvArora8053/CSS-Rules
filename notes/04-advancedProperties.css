@@ -76,3 +76,9 @@
     /* if we transalte at zero then it's gonna look exactly the way that it looks right now */
   }
 }
+
+.btn:hover{
+  transform: translateY(-3px);
+  /* x,y,blur,scale,color --> more the blur more upwards */
+  box-shadow: 0 10px 20px ;
+}
