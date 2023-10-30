@@ -17,10 +17,10 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
       }
 
-      .item{
+      .item {
         background-color: #f1425d;
         padding: 40px;
         margin: 30px;
@@ -28,22 +28,51 @@
         font-size: 40px;
       }
 
-      .i2{
+      .i2 {
         height: 200px;
       }
 
-      .i4{
-        font-size: 70px;
+      .i4 {
+        /* font-size: 70px; */
+        align-self: flex-end;
+
+        order: -1;
+      }
+
+      .i3 {
+        order: 1;
+      }
+
+      .i2 {
+        order: 2;
+      }
+
+      .item {
+        /* flex-grow: 1; */
+        /* flex: 1; */
+      }
+
+      .i2 {
+        /* flex-grow: 2; */
+      }
+
+      .i3 {
+        /* flex: 1; */
+      }
+
+      .i2 {
+        /* flex-basis: 600px; */
+        flex: 0 1 300px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item">1</div>
+      <div class="item i1">1</div>
       <div class="item i2">2</div>
-      <div class="item">3</div>
+      <div class="item i3">3</div>
       <div class="item i4">4</div>
-      <div class="item">5</div>
+      <div class="item i5">5</div>
     </div>
   </body>
 </html>
