@@ -15,10 +15,14 @@
         background-color: #ccc;
         padding: 10px;
         display: flex;
+        height: 1000px;
 
         /* flex-direction: column-reverse; */
         justify-content: center;
         align-items: center;
+
+        flex-wrap: wrap;
+        align-content: stretch;
       }
 
       .item {
@@ -28,50 +32,6 @@
         color: #fff;
         font-size: 40px;
       }
-
-      .i4 {
-        align-self: flex-end;
-        order: -1;
-      }
-
-      .i3 {
-        order: 1;
-      }
-
-      .i2 {
-        order: 2;
-      }
-
-      .item {
-        /* flex-grow: 1; */
-      }
-
-      .i2 {
-        /* flex-grow: 2; */
-      }
-
-      .i3 {
-        flex: 1;
-      }
-
-      .i2 {
-        /* flex-basis: 20%;
-      flex-basis: 300px;
-      flex-shrink: 0; */
-        flex: 0 1 300px;
-      }
-
-      .i2 {
-        height: 200px;
-      }
-
-      /* .i2 {
-        height: 200px;
-      }
-
-      .i4 {
-        font-size: 20px;
-      } */
     </style>
   </head>
   <body>
@@ -81,6 +41,16 @@
       <div class="item i3">3</div>
       <div class="item i4">4</div>
       <div class="item i5">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
     </div>
   </body>
 </html>
